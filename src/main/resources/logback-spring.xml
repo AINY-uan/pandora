@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60000" debug="true">
+
+    <property name="Log_Home" value="pandora"/>
+
+    <!--日志格式-->
+    <property name="Log_Pattern" value="[%d{HH:mm:ss.SSS}][%.-1level][%15.15thread][%30.30logger{10}.%L] -%m%n"/>
+    <!--文件格式-->
+    <property name="File_Pattern" value="../logs/%d{yyyy-MM-dd}/pandora/"/>
+    <!--最大保留时间-->
+    <property name="cleanMaxDay" value="30"/>
+    <!--log上下文名称，默认default-->
+    <contextName>${Log_Home}</contextName>
+
+    <!--控制台输出-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${Log_Pattern}</pattern>
+        </encoder>
+    </appender>
+    <!--文件输出, 根据时间滚动-->
+    <appender name="root" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${File_Pattern}running-%i.log</fileNamePattern>
+            <!--日志文件最大的大小-->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>1MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>${cleanMaxDay}</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <Prudent>true</Prudent>
+        <encoder>
+            <pattern>${Log_Pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.ainy.pandora.dao" level="DEBUG" additivity="false">
+        <appender-ref ref="root"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!-- trace, debug, info, warn, error -->
+    <root level="DEBUG">
+        <appender-ref ref="root"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- 关闭相关的日志 -->
+    <logger name="ch.qos.logback" level="ERROR"/>
+    <logger name="io.swagger" level="OFF"/>
+    <logger name="org.apache" level="ERROR"/>
+    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="org.mybatis" level="ERROR"/>
+    <logger name="org.springframework" level="ERROR"/>
+    <logger name="com.alibaba.druid" level="ERROR"/>
+
+</configuration>
