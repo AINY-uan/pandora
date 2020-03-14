@@ -1,9 +1,9 @@
 package org.ainy.pandora.constant;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-06 22:36
- * @Description TOKEN常量
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-06 22:36
+ * @description TOKEN常量
  */
 public class TokenConstant {
 

@@ -12,9 +12,9 @@ import org.ainy.pandora.constant.TokenConstant;
 import java.util.Date;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-06 22:36
- * @Description TOKEN验证
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-06 22:36
+ * @description TOKEN验证
  */
 @Slf4j
 public class AuthUtils {

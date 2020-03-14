@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-23 22:37
- * @Description 潘多拉配置
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-23 22:37
+ * @description 潘多拉配置
  */
 @Component
 public class PandoraConfig implements WebMvcConfigurer {

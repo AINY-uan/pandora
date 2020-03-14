@@ -17,9 +17,9 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-18 23:11
- * @Description 全局异常捕获
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-18 23:11
+ * @description 全局异常捕获
  */
 @Slf4j
 @RestControllerAdvice

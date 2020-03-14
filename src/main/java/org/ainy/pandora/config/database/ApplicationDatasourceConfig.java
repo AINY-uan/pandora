@@ -13,9 +13,9 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-06 21:51
- * @Description 应用数据库配置
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-06 21:51
+ * @description 应用数据库配置
  */
 @Configuration
 @MapperScan(basePackages = ApplicationDatasourceConfig.PACKAGE, sqlSessionTemplateRef = "applicationSqlSessionTemplate")

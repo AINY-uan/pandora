@@ -5,9 +5,9 @@ import org.springframework.dao.DataAccessException;
 import java.util.List;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-03-31 10:53
- * @Description 公共映射Mapper
+ * @author 阿拉丁省油的灯
+ * @date 2019-03-31 10:53
+ * @description 公共映射Mapper
  */
 public interface BaseDaoMapper {
 

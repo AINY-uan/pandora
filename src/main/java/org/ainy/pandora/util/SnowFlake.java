@@ -1,9 +1,9 @@
 package org.ainy.pandora.util;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-10 20:45
- * @Description 雪花算法
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-10 20:45
+ * @description 雪花算法
  */
 public class SnowFlake {
 

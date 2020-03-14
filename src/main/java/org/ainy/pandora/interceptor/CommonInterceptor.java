@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-23 22:27
- * @Description 公共拦截器
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-23 22:27
+ * @description 公共拦截器
  */
 @Slf4j
 @Configuration

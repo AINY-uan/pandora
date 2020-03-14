@@ -7,9 +7,9 @@ import ma.glasnost.orika.MapperFactory;
 import ma.glasnost.orika.impl.DefaultMapperFactory;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-06 22:38
- * @Description JavaBean映射工具
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-06 22:38
+ * @description JavaBean映射工具
  */
 public class OrikaMapper {
 

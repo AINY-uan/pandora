@@ -3,9 +3,9 @@ package org.ainy.pandora.exception;
 import org.ainy.pandora.constant.ErrorConstant;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-18 23:10
- * @Description 业务异常
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-18 23:10
+ * @description 业务异常
  */
 public class BusinessException extends RuntimeException {
 

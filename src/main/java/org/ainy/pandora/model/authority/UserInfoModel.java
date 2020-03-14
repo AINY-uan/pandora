@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-20 22:57
- * @Description 用户信息Model
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-20 22:57
+ * @description 用户信息Model
  */
 @Data
 @NoArgsConstructor

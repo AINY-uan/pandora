@@ -4,9 +4,9 @@ import com.google.common.hash.Hashing;
 import org.apache.commons.lang3.RandomStringUtils;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-06 22:36
- * @Description 加解密工具
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-06 22:36
+ * @description 加解密工具
  */
 public class EncryptionUtils {
 

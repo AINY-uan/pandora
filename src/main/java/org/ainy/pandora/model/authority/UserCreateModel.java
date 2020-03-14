@@ -7,9 +7,9 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-18 22:55
- * @Description 用户数据传输对象
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-18 22:55
+ * @description 用户数据传输对象
  */
 @Data
 @NoArgsConstructor

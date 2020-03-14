@@ -16,9 +16,9 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-06 22:36
- * @Description 用户服务
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-06 22:36
+ * @description 用户服务
  */
 @Slf4j
 @Service
@@ -43,8 +43,9 @@ public class UserService {
 
             UserInfo userInfo = userInfoMapper.selectByPrimaryKey(o);
 
-            if (userInfo == null)
+            if (userInfo == null) {
                 return new ResponseData<>(ErrorConstant.USER_IS_NOT_EXIST);
+            }
 
             return new ResponseData<>(OrikaMapper.copy(userInfo, UserInfoModel.class));
 
@@ -67,8 +68,9 @@ public class UserService {
 
             UserInfo userInfoTmp = userInfoMapper.selectByUniqueKey(o.getUserId());
 
-            if (userInfoTmp != null)
+            if (userInfoTmp != null) {
                 return new ResponseData<>(ErrorConstant.USER_IS_EXIST);
+            }
 
             UserInfo userInfo = new UserInfo();
 
@@ -108,14 +110,16 @@ public class UserService {
 
             UserInfo userInfoTmp = userInfoMapper.selectByUniqueKey(userLoginModel.getUserId());
 
-            if (userInfoTmp == null)
+            if (userInfoTmp == null) {
                 return new ResponseData<>(ErrorConstant.USER_IS_NOT_EXIST);
+            }
 
             /*
              * 判断密码是否正确
              */
             String tmpPwd = EncryptionUtils.Encryption(userLoginModel.getPassword().trim(), userInfoTmp.getSalt());
-            if (!tmpPwd.equals(userInfoTmp.getHashValue())) { // 密码错误
+            // 密码错误
+            if (!tmpPwd.equals(userInfoTmp.getHashValue())) {
                 return new ResponseData<>(ErrorConstant.PASSWORD_IS_ERROR);
             }
 

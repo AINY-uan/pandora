@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotEmpty;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-23 21:09
- * @Description 用户登录Model
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-23 21:09
+ * @description 用户登录Model
  */
 @Data
 @NoArgsConstructor

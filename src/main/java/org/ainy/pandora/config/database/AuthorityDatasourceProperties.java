@@ -5,9 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-09 21:09
- * @Description 权限数据库属性配置文件
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-09 21:09
+ * @description 权限数据库属性配置文件
  */
 @Data
 @Component

@@ -1,20 +1,20 @@
 package org.ainy.pandora.constant;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-09 21:46
- * @Description 错误码枚举类
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-09 21:46
+ * @description 错误码枚举类
  */
 public enum ErrorConstant {
 
     /**
-     * succeess
+     * success
      */
-    SYSTEM_SUCCESS(200, "succeess"),
+    SYSTEM_SUCCESS(200, "success"),
     /**
      * bad requesst
      */
-    BAD_REQUEST(400, "bad requesst"),
+    BAD_REQUEST(400, "bad request"),
     /**
      * un authorized
      */
@@ -39,7 +39,7 @@ public enum ErrorConstant {
     /**
      * requst token is not exist
      */
-    TOKEN_IS_NOT_EXIST(1004, "requst token is not exist"),
+    TOKEN_IS_NOT_EXIST(1004, "request token is not exist"),
     /**
      * token is invalid
      */

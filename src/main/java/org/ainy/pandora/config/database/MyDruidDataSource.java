@@ -6,9 +6,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.ainy.pandora.util.RsaUtil;
 
 /**
- * @Author 阿拉丁省油的灯
- * @Date 2019-11-08 22:32
- * @Description 自定义数据库连接池
+ * @author 阿拉丁省油的灯
+ * @date 2019-11-08 22:32
+ * @description 自定义数据库连接池
  */
 @Slf4j
 public class MyDruidDataSource extends DruidDataSource {
